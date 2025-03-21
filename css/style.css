@@ -1,0 +1,114 @@
+body {
+    
+    background-color: white;
+}
+
+header img {
+    width: 100%;
+}
+
+header {
+    background: rgb(255, 255, 255);
+    height: 100px;
+}
+
+body h1 {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(177, 36, 36);
+    text-align: center;
+}
+
+#texto {
+    width: 35%;
+}
+
+#geral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#fotos-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#texto {
+    max-width: 400px;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 imagens por fileira */
+    gap: 20px; /* Espaçamento entre as imagens */
+    max-width: 600px;
+}
+
+#fotos img {
+    width: 100%;
+    max-width: 180px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.countdown {
+    width: 30%;
+    border-radius: 200px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* modal */
+
+/* Fundo escuro ao redor da modal */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Conteúdo da Modal */
+.modal-conteudo {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ff0000;
+    max-width: 400px;
+}
+
+/* Botão de Fechar */
+#fecharModal {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#fecharModal:hover {
+    background: #920000;
+}
+
+@keyframes cair {
+    0% { transform: translateY(0px); }
+    100% { transform: translateY(100vh); }
+}
+
